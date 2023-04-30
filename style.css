@@ -1,0 +1,433 @@
+/**/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color:#2EC4B6;/*#D7FFEE*/
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    /* padding-left: 10px; */
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style: none;
+    list-style-type: none;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    width:100%;
+    margin-bottom:30px;
+/*     background-color:black; */
+    display:flex;/*This and the bottom line are to make it centered all.*/
+    align-items: center;
+  z-index:1;/*This is for the positioning like of how prioritied it is. the higher the number the more upfront it will be and hover over other content.*/
+}
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+  
+}
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: right;
+   
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+}
+
+#theme-button:hover{
+  color:purple;
+}
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;/*This sets the gap between all the rows and columns where its row then column in that order such as 20px and 25px*/
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+  width:auto;
+  height:auto;
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2){
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+font-style: italic;
+}
+
+h2 {
+/* */
+}
+
+h3 {
+
+}
+
+p {
+font-weight:10px ;
+}
+
+a {
+text-decoration: none;
+  font-size: 15px;
+}
+a:link{/*Links that have not been visited*/
+  color:forestgreen;
+}
+a:visited{
+  color:purple;
+}
+a:hover{
+  color:antiquewhite;
+}
+a:active{
+  color:yellow;
+}
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+
+}
+
+ol li {
+
+}
+
+
+ul {
+
+}
+
+ul li {
+
+}
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color:  #008CBA;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;/*This will change the mouse to a little hand when you hover over it.*/
+  border-radius: 6px;/*How round the corners of a button are.*/
+  
+}
+.header-button{
+  border-radius: 6px;
+  background-color:#008CBA;
+  color:white;
+  cursor:pointer;
+}
+.header-button:hover{
+  color:purple;
+}
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+  padding-top:30px;
+  margin-bottom:20px;
+  padding-bottom:30px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+
+/* Example: This styles an element with an id="header-img" */
+#about-container{/*This is where the inside method starts, this is the big div that contains the entire content of that block. It starts as column, where everything is in a column. */
+  padding-top:30px;
+  margin-bottom:30px;
+  padding-bottom:30px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  line-height: 1.8;/*This is for the amount of space in between sentences.*/
+  
+}
+
+#about-container p{
+  padding-left:20px;
+  
+}
+
+.reasons-container{/*This is where the inside method comes to play. This is the css for the second smaller div that holds the two divs that will be side by side. The two divs will be side by side hence the flex-direction being row.  */
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  width:100;
+  padding-bottom:50px;
+  
+}
+
+.reason1{/*Reason1 and reason2 are the two divs inside the second smaller div, they are side by side. Now thier content is 
+ inside that little area matters as well. Its going to be using flex column  and using align-items for the cross axis. */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reason2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Vid-container{/*This uses the inside method.*/
+  display:flex;
+  flex-direction: column;
+  margin:30px 0px 30px 0px;
+/*   background-color:lightpink; */
+  align-items: center;
+  text-align:center;
+  
+}
+#Vid-container:nth-of-type(2){
+  margin-bottom:30px;
+}
+
+.video-blok{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  width:100;
+  padding-bottom:50px;
+  line-height: 1.8;
+  
+}
+.p-text{
+  width:55%;
+  padding-right:55px;
+  padding-left:10px;
+}
+
+.vid-block{
+  width:45;
+  padding-right:10px;
+}
+
+#info-container{
+/*   background-color:lightseagreen; */
+  padding-top:30px;
+  padding-left:15px;
+  margin-bottom:30px;
+  padding-bottom:30px;
+  display:flex;
+  flex-direction: column;
+}
+
+#info-container:nth-of-type(1){
+  justify-content: center;
+}
+
+.vertical{/*This is me targeting a class that are for images that are vertically longer*/
+  height:100px;
+  width:180px;
+  max-width:180px;
+}
+.footer-container {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  height:40px;
+}
+
+.footer-links-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color:antiquewhite;
+    
+}
+
+/*CSS For the js dark mode ?*/
+/* Add style to button */
+#theme-button {
+  border-radius:6px;
+  padding:10px;
+}
+
+#motion-button {
+  border-radius: 6px;
+  padding:10px;
+}
+
+#motion-button:hover{
+  color:purple;
+}
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color:white;
+
+}
+
+.petition-container{/*THIS IS THE INSIDE METHOD CREATION IN PLAY.*/
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  width:100;
+  padding-bottom:50px;
+}
+
+.petition h2{
+  padding-left:15px;
+}
+.petition-para{
+  width:55%;
+  padding-right:55px;
+  line-height: 1.8;
+  padding-left:15px;
+}
+
+.signatures{
+  width:45;
+  padding-right:10px;
+}
+
+#sign-now-button:hover{
+  color:purple;
+}
+
+/* Add to CSS file */
+.error {/*When the error class is added this will add a border and color to make it red which emphasizes the wrong input*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable{
+  position:relative;/*This makes the content set a specific location.*/
+  transform:translateY(150px);/*This moves the content down.*/
+  opacity:0;/*The opactiy of 0 makes this invisible or disappear*/
+  transition:all 2s ease;/*This eases all of the content back in during a 2 second period.*/
+  
+}
+
+.active{ 
+  transform:translateY(0px);/*This actually makes the content go back up to the main position that it was in hence relative positon.*/
+  opacity:1;
+  
+}
+/******* MODAL STUFF ************/
+#ty-image{
+  width:250px;
+  height:250px;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+  font-size:20px;
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;/*This is for the cross-axis*/
+  justify-content: center;/*This is for the main axis */
+}

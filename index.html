@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gun Violence Prevention and Awareness</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="img_101/lemon_copy.jpeg">
+</head>
+
+<body>
+
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about-container">About</a></li>
+      <li><a href="#Vid-container">Video</a></li>
+      <li><a href="#info-container">Recent News</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+      <li><button id="motion-button">Reduce Motion</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+  <!-- Part 2: Flexbox Layout Stater Code 
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+  -->
+  <!--- Headings --->
+
+  <div class="header-container">
+    <div class="header-item">
+      <img src="/img_101/Gun_4.webp" id="header-img">
+    </div>
+    <div class="header-item">
+      <h1>My Activism Project: Gun Violence Prevention and Awareness</h1>
+      <h3>Keep us safe from gun violence!</h3>
+      <button class=header-button type="button">Donate</button>
+      <button class="header-button" type=" button">Share</button>
+    </div>
+  </div>
+
+  <!--- About SECTION--->
+  <div id="about-container" class="revealable">
+    <h2>What's the matter with gun violence and what can we do?</h2>
+
+    <p>The use of a gun greatly increases the odds that violence will lead to a fatality: This problem calls for
+      urgent
+      action.The licensing of handgun purchasers, background check requirements for all gun sales, and close oversight
+      of retail gun sellers can reduce the diversion of guns to criminals. Reducing the incidence of gun violence will
+      require interventions through multiple systems, including legal, public health, public safety, community, and
+      health. Increasing the availability of data and funding will help inform and evaluate policies designed to
+      reduce
+      gun violence.
+    </p>
+
+    <!-- Starting here it uses the inside method.  -->
+    <div class="reasons-container revealable">
+      <div class="reason1">
+        <img src="img_101/Gun_1.jpeg" class="vertical">
+        <p>
+          <b>Petition</b>
+        </p>
+        <p>People can band together to make a change at a government level.</p>
+      </div>
+
+      <div class="reason2">
+        <img src="img_101/Gun_2.jpeg" class="vertical">
+        <p>
+          <b>Your kids!</b>
+        </p>
+        <p>
+          Too many youth members are facing consequences of no control.
+        </p>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- NEW SECTION Linked Video -->
+  <!--  This uses the inside method as well. -->
+  <div id="Vid-container" class="revealable">
+    <h1>Video</h1>
+    <div class="video-blok">
+
+      <div class="p-text">
+        "The effect of guns is not measured by the 41,000 deaths. That's easy to measure, but what are the downstream
+        effects of this, in many of these communities and to the public at large? When you're running a healthcare
+        organization, we see it each and every day. Millions of people end up in the hospital as a result of gun
+        violence. We treat people who come to us with gun injuries. We treat the people that come to us with trauma. We
+        treat mental health issues. We treat domestic violence victims. Over 80% of Americans, believe that something
+        should be done about gun safety, including gun owners. I think people are afraid to talk about it because people
+        automatically jump to the issue of, oh you want to ban guns. I'm not against guns. I'm against the unnecessary
+        ill effect of guns that do terrible harm to people." - Michael J.Dowling
+      </div>
+
+      <div class="vid-block revealable">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-PT1CMzZNg0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!--NEW SECTION Some links for the main body -->
+  <!--This has an a tag then an article inside so that there is context text under the link that also acts as the a tag.  -->
+  <div id="info-container" class="revealable">
+    <h2>Recent News</h2>
+    <a class="news" href="https://www.gale.com/open-access/gun-control" target="_blank" rel="noopener" rel="noreferrer">
+      <article>
+        <h3>"Gun Control." Opposing Viewpoints Online Collection, Gale, 2022.</h3>
+        <p>Article about gun control views</p>
+      </article>
+    </a>
+    
+    <a class="news revealable"
+      href="https://www.preventioninstitute.org/focus-areas/preventing-violence-and-reducing-injury/preventing-violence-advocacy"
+      target="_blank" rel="noopener" rel="noreferrer">
+      <article>
+        <h3>"Gun Violence Must Stop. Here's What We Can Do to Prevent More Deaths</h3>
+        <p>Article about gun violence prevention</p>
+      </article>
+    </a>
+  </div>
+
+  <!--The petition form -->
+
+  <!-- I used one big div, with a second smaller div and two smaller divs inside the second div. This is so that I could use flex row to have it split. Inside the big div, it follows a flex-direction of column so, it goes, h2, then the paragrahp and the signatures and the form last. But since the second div uses flex-direction of row so that way under the h2 tag the paragraph and signatures will be side by side. I guess I will call this method the inside method.-->
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        Please take action to quell the terrible epidemic of gun violence our society is suffering. We look forward to
+        working with you to enact these common-sense measures to reduce gun violence. Our prayers are with you, our
+        support is behind you.
+      </div>
+
+      <div class="signatures" id="adds">
+        <p>🖊️ Drake from Canada supports this.</p>
+        <p>🖊️ Ryan Gosling from Queens supports this.</p>
+        <p>🖊️ Ryan Reynolds from Harlem supports this.</p>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="nom">Name:</label>
+      <input type="text" id="nom">
+
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <!-- Footer-->
+
+  <div class="footer-container">
+    <div class="footer-links-container">
+      <a href="https://www.linkedin.com/company/everytown-for-gun-safety/" target="_blank" rel="noopener"
+        rel="noreferrer">Join the LinkedIn</a>
+      <a href="https://www.reddit.com/t/gun_control/" target="_blank" rel="noopener" rel="noreferrer">Follow the
+        reddit</a>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <!-- This uses the INSIDE METHOD. -->
+    <div class="modal-content">
+      
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Content in the thanks-modal-content </p>
+        <!-- button here (stretch feature) -->
+        <button id="close-modal-button"> Close </button>
+      </div>
+      <!-- image here-->
+      <img src="/img_101/Dog.png" alt="Thanks" id="ty-image">
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+</body>
+
+</html>
